@@ -14,3 +14,14 @@ document.addEventListener("click", () => {
 
 // Simple click message
 console.log("Flowers For You Loaded ❤️");
+const gift = document.getElementById("gift");
+const message = document.getElementById("message");
+
+gift.addEventListener("click", () => {
+
+    gift.style.transform = "scale(0)";
+    gift.style.opacity = "0";
+
+    message.innerHTML = "Opening... ❤️";
+
+});
