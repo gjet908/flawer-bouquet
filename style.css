@@ -63,13 +63,15 @@ body{
 /* Bouquet */
 /* ========================= */
 
-#bouquet{display:none;
+#bouquet{
+    display:none;
     position:absolute;
-    bottom:80px;
+    width:220px;          /* 300px ki jagah 220px */
+    bottom:-250px;        /* Screen ke neeche se start hoga */
     left:50%;
-    transform:translateX(-50%)scale(0);
+    transform:translateX(-50%);
     opacity:0;
- transition:2s ease;
+    transition:all 2s ease;
 }
 .stem{
     position:absolute;
