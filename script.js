@@ -78,5 +78,38 @@ setTimeout(() => {
     document.querySelector(".flower7").style.opacity = "1";
     document.querySelector(".flower7").style.transform = "scale(1) rotate(0deg)";
 }, 3900);
+    
+setTimeout(() => {
+    
+    startFlowerRain();
+}, 4200);
+    
 },2300);
 });
+function startFlowerRain(){
+
+    const container = document.getElementById("flower-rain");
+
+    const flowers = ["🌸","🌹","🌺","🌷","🌼","💮","🌻"];
+
+    setInterval(()=>{
+
+        const f = document.createElement("div");
+
+        f.className = "rain-flower";
+
+        f.innerHTML = flowers[Math.floor(Math.random()*flowers.length)];
+
+        f.style.left = Math.random()*100 + "vw";
+
+        f.style.fontSize = (20 + Math.random()*30) + "px";
+
+        container.appendChild(f);
+
+        setTimeout(()=>{
+            f.remove();
+        },6000);
+
+    },250);
+
+}
