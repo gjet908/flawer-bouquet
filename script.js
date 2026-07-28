@@ -15,7 +15,7 @@ const message = document.getElementById("message");
 const bouquet = document.getElementById("bouquet");
 
 gift.addEventListener("click", () => {
-
+console.log("Script loaded!");
     // Hide gift
     gift.style.transform = "scale(0)";
     gift.style.opacity = "0";
