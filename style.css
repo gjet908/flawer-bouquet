@@ -67,9 +67,10 @@ body{
     position:absolute;
     bottom:80px;
     left:50%;
-    transform:translateX(-50%);
+    transform:translateX(-50%)scale(0);
+    opacity:0;
+ transition:2s ease;
 }
-
 .stem{
     position:absolute;
     width:6px;
