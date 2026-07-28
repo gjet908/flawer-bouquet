@@ -51,4 +51,4 @@ document.querySelector(".flower3").style.opacity = "1";
 document.querySelector(".flower3").style.transform = "scale(1) rotate(0deg)";
 
 },1100);
-
+});
