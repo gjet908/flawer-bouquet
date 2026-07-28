@@ -26,11 +26,18 @@ gift.addEventListener("click", () => {
     message.innerHTML = "Opening... ❤️";
 const bouquet = document.getElementById("bouquet");
 bouquet.style.display = "block";
-setTimeout(() => {    
+setTimeout(() => { 
+    
 document.querySelector(".stem1").style.height = "180px";
 document.querySelector(".stem2").style.height = "220px";
 document.querySelector(".stem3").style.height = "180px";
+document.querySelector(".leaf1").style.opacity = "1";
+document.querySelector(".leaf2").style.opacity = "1";
+document.querySelector(".leaf3").style.opacity = "1";
 
+document.querySelector(".leaf1").style.transform = "rotate(-35deg) scale(1)";
+document.querySelector(".leaf2").style.transform = "rotate(30deg) scale(1)";
+document.querySelector(".leaf3").style.transform = "rotate(35deg) scale(1)";
 }, 100);   
 setTimeout(() => {
 
