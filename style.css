@@ -59,3 +59,48 @@ body{
     font-size:28px;
     letter-spacing:2px;
 }
+/* ========================= */
+/* Bouquet */
+/* ========================= */
+
+#bouquet{
+    position:absolute;
+    bottom:80px;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.stem{
+    position:absolute;
+    width:6px;
+    height:0;
+    background:#3cb371;
+    bottom:0;
+    border-radius:10px;
+    transition:1.5s;
+}
+
+.stem1{ left:-40px; }
+.stem2{ left:0; }
+.stem3{ left:40px; }
+
+.flower{
+    position:absolute;
+    font-size:0px;
+    transition:1.5s;
+}
+
+.flower1{
+    left:-58px;
+    bottom:180px;
+}
+
+.flower2{
+    left:-15px;
+    bottom:220px;
+}
+
+.flower3{
+    left:28px;
+    bottom:180px;
+}
