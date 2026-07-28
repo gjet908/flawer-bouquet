@@ -31,7 +31,24 @@ document.querySelector(".stem2").style.height = "220px";
     
 document.querySelector(".stem3").style.height = "180px";
 
-document.querySelector(".flower1").style.fontSize = "55px";
-document.querySelector(".flower2").style.fontSize = "55px";
-document.querySelector(".flower3").style.fontSize = "55px";
-});
+setTimeout(() => {
+
+document.querySelector(".flower1").style.opacity = "1";
+document.querySelector(".flower1").style.transform = "scale(1) rotate(0deg)";
+
+},300);
+
+setTimeout(() => {
+
+document.querySelector(".flower2").style.opacity = "1";
+document.querySelector(".flower2").style.transform = "scale(1) rotate(0deg)";
+
+},700);
+
+setTimeout(() => {
+
+document.querySelector(".flower3").style.opacity = "1";
+document.querySelector(".flower3").style.transform = "scale(1) rotate(0deg)";
+
+},1100);
+
