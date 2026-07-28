@@ -86,10 +86,13 @@ body{
 
 .flower{
     position:absolute;
-    font-size:0px;
-    transition:1.5s;
+    font-size:55px;
+    opacity:0;
+    transform:scale(0) rotate(-180deg);
+    transition:transform 1.5s ease,
+               opacity 1.5s ease;
 }
-
+   
 .flower1{
     left:-58px;
     bottom:180px;
