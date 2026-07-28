@@ -22,18 +22,16 @@ gift.addEventListener("click", () => {
 
     message.innerHTML = "Opening... ❤️";
 
-    // Show bouquet
-    bouquet.style.display = "block";
 
-  // Show lily bouquet
+// Show lily bouquet
 setTimeout(() => {
 
     bouquet.style.display = "block";
 
-    setTimeout(()=>{
-        bouquet.style..opacity = "1";
-        bouquet.style..bottom = "60px";
-    },100);
+    setTimeout(() => {
+        bouquet.style.opacity = "1";
+        bouquet.style.bottom = "60px";
+    }, 100);
 
 }, 1000);
     
