@@ -108,6 +108,25 @@ body{
     left:28px;
     bottom:180px;
 }
+.flower4{
+    left:-90px;
+    bottom:170px;
+}
+
+.flower5{
+    left:75px;
+    bottom:170px;
+}
+
+.flower6{
+    left:-5px;
+    bottom:270px;
+}
+
+.flower7{
+    left:0px;
+    bottom:150px;
+}
 .leaf{
     position:absolute;
     width:18px;
