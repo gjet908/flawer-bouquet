@@ -44,19 +44,19 @@ setTimeout(() => {
 document.querySelector(".flower1").style.opacity = "1";
 document.querySelector(".flower1").style.transform = "scale(1) rotate(0deg)";
 
-},300);
+},1500);
 
 setTimeout(() => {
 
 document.querySelector(".flower2").style.opacity = "1";
 document.querySelector(".flower2").style.transform = "scale(1) rotate(0deg)";
 
-},700);
+},1900);
 
 setTimeout(() => {
 
 document.querySelector(".flower3").style.opacity = "1";
 document.querySelector(".flower3").style.transform = "scale(1) rotate(0deg)";
 
-},1100);
+},2300);
 });
