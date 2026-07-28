@@ -24,13 +24,14 @@ gift.addEventListener("click", () => {
     gift.style.opacity = "0";
 
     message.innerHTML = "Opening... ❤️";
-document.getElementById("bouquet").style.display = "block";
+const bouquet = document.getElementById("bouquet");
+bouquet.style.display = "block";
+setTimeout(() => {    
 document.querySelector(".stem1").style.height = "180px";
-    
 document.querySelector(".stem2").style.height = "220px";
-    
 document.querySelector(".stem3").style.height = "180px";
 
+}, 100);   
 setTimeout(() => {
 
 document.querySelector(".flower1").style.opacity = "1";
