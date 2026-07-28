@@ -1,96 +1,105 @@
-
 // ===============================
-// Flowers For You
-// Part 1
+// Flowers For You ❤️
 // ===============================
 
 // Background Music
 const music = new Audio("music.mp3");
 music.loop = true;
 
-// Play music on first click
 document.addEventListener("click", () => {
     music.play().catch(() => {});
 }, { once: true });
 
-// Simple click message
-console.log("Flowers For You Loaded ❤️");
 const gift = document.getElementById("gift");
 const message = document.getElementById("message");
+const bouquet = document.getElementById("bouquet");
 
 gift.addEventListener("click", () => {
 
+    // Hide gift
     gift.style.transform = "scale(0)";
     gift.style.opacity = "0";
 
     message.innerHTML = "Opening... ❤️";
-const bouquet = document.getElementById("bouquet");
-bouquet.style.display = "block";
-setTimeout(() => { 
-    
-document.querySelector(".stem1").style.height = "180px";
-document.querySelector(".stem2").style.height = "220px";
-document.querySelector(".stem3").style.height = "180px";
-document.querySelector(".leaf1").style.opacity = "1";
-document.querySelector(".leaf2").style.opacity = "1";
-document.querySelector(".leaf3").style.opacity = "1";
 
-document.querySelector(".leaf1").style.transform = "rotate(-35deg) scale(1)";
-document.querySelector(".leaf2").style.transform = "rotate(30deg) scale(1)";
-document.querySelector(".leaf3").style.transform = "rotate(35deg) scale(1)";
-}, 100);   
-setTimeout(() => {
+    // Show bouquet
+    bouquet.style.display = "block";
 
-document.querySelector(".flower1").style.opacity = "1";
-document.querySelector(".flower1").style.transform = "scale(1) rotate(0deg)";
+    // Grow stems + leaves
+    setTimeout(() => {
 
-},1500);
+        document.querySelector(".stem1").style.height = "180px";
+        document.querySelector(".stem2").style.height = "220px";
+        document.querySelector(".stem3").style.height = "180px";
 
-setTimeout(() => {
+        document.querySelector(".leaf1").style.opacity = "1";
+        document.querySelector(".leaf2").style.opacity = "1";
+        document.querySelector(".leaf3").style.opacity = "1";
 
-document.querySelector(".flower2").style.opacity = "1";
-document.querySelector(".flower2").style.transform = "scale(1) rotate(0deg)";
+        document.querySelector(".leaf1").style.transform = "rotate(-35deg) scale(1)";
+        document.querySelector(".leaf2").style.transform = "rotate(30deg) scale(1)";
+        document.querySelector(".leaf3").style.transform = "rotate(35deg) scale(1)";
 
-},1900);
+    },100);
 
-setTimeout(() => {
-    document.querySelector(".flower3").style.opacity = "1";
-    document.querySelector(".flower3").style.transform = "scale(1) rotate(0deg)";
-},2300);
-    
-setTimeout(() => {
-    
-    document.querySelector(".flower4").style.opacity = "1";
-    document.querySelector(".flower4").style.transform = "scale(1) rotate(0deg)";
-}, 2700);
+    // Flower 1
+    setTimeout(() => {
+        showFlower(".flower1");
+    },1500);
 
-setTimeout(() => {
-    document.querySelector(".flower5").style.opacity = "1";
-    document.querySelector(".flower5").style.transform = "scale(1) rotate(0deg)";
-}, 3100);
+    // Flower 2
+    setTimeout(() => {
+        showFlower(".flower2");
+    },1900);
 
-setTimeout(() => {
-    document.querySelector(".flower6").style.opacity = "1";
-    document.querySelector(".flower6").style.transform = "scale(1) rotate(0deg)";
-}, 3500);
+    // Flower 3
+    setTimeout(() => {
+        showFlower(".flower3");
+    },2300);
 
-setTimeout(() => {
-    document.querySelector(".flower7").style.opacity = "1";
-    document.querySelector(".flower7").style.transform = "scale(1) rotate(0deg)";
-}, 3900);
-    
-setTimeout(() => {
-    
-    startFlowerRain();
-}, 4200);
-    
+    // Flower 4
+    setTimeout(() => {
+        showFlower(".flower4");
+    },2700);
+
+    // Flower 5
+    setTimeout(() => {
+        showFlower(".flower5");
+    },3100);
+
+    // Flower 6
+    setTimeout(() => {
+        showFlower(".flower6");
+    },3500);
+
+    // Flower 7
+    setTimeout(() => {
+        showFlower(".flower7");
+    },3900);
+
+    // Start Flower Rain
+    setTimeout(() => {
+        startFlowerRain();
+    },4200);
+
 });
 
-},2300);
-});
+function showFlower(selector){
+
+    const flower = document.querySelector(selector);
+
+    if(!flower) return;
+
+    flower.style.opacity = "1";
+    flower.style.transform = "scale(1) rotate(0deg)";
+}
+
+// Flower Rain
 function startFlowerRain(){
 
     const container = document.getElementById("flower-rain");
+
+    if(!container) return;
 
     const flowers = ["🌸","🌹","🌺","🌷","🌼","💮","🌻"];
 
@@ -103,8 +112,7 @@ function startFlowerRain(){
         f.innerHTML = flowers[Math.floor(Math.random()*flowers.length)];
 
         f.style.left = Math.random()*100 + "vw";
-
-        f.style.fontSize = (20 + Math.random()*30) + "px";
+        f.style.fontSize = (20 + Math.random()*25) + "px";
 
         container.appendChild(f);
 
