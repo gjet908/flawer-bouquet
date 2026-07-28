@@ -135,3 +135,27 @@ body{
     bottom:90px;
     transform:rotate(35deg) scale(0);
 }
+.sparkle{
+    position:absolute;
+    width:6px;
+    height:6px;
+    border-radius:50%;
+    background:white;
+    box-shadow:0 0 15px white;
+    animation:sparkle 2s infinite;
+}
+
+@keyframes sparkle{
+    0%{
+        opacity:0;
+        transform:scale(0);
+    }
+    50%{
+        opacity:1;
+        transform:scale(1.5);
+    }
+    100%{
+        opacity:0;
+        transform:scale(0);
+    }
+}
