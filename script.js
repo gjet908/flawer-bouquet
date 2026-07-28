@@ -57,7 +57,7 @@ setTimeout(() => {
 
 document.querySelector(".flower3").style.opacity = "1";
 document.querySelector(".flower3").style.transform = "scale(1) rotate(0deg)";
- },2300;
+ },2300);
     
 setTimeout(() => {
     
