@@ -31,7 +31,7 @@ setTimeout(() => {
     bouquet.style.display = "block";
 
     setTimeout(()=>{
-        bouquet.style.opacity = "1";
+        bouquet.style..opacity = "1";
         bouquet.style..bottom = "60px";
     },100);
 
