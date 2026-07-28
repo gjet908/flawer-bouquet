@@ -32,10 +32,10 @@ setTimeout(() => {
 
     setTimeout(()=>{
         bouquet.style.opacity = "1";
-        bouquet.style.transform = "translateX(-50%) scale(1)";
+        bouquet.style..bottom = "60px";
     },100);
 
-},1000);
+}, 1000);
     
     // Start Flower Rain
     setTimeout(() => {
