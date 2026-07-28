@@ -77,7 +77,8 @@ body{
     background:#3cb371;
     bottom:0;
     border-radius:10px;
-    transition:1.5s;
+    transform-origin:bottom;
+    transition:height 1.5s ease;
 }
 
 .stem1{ left:-40px; }
