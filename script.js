@@ -57,6 +57,26 @@ setTimeout(() => {
 
 document.querySelector(".flower3").style.opacity = "1";
 document.querySelector(".flower3").style.transform = "scale(1) rotate(0deg)";
+    
+setTimeout(() => {
+    
+    document.querySelector(".flower4").style.opacity = "1";
+    document.querySelector(".flower4").style.transform = "scale(1) rotate(0deg)";
+}, 2700);
 
+setTimeout(() => {
+    document.querySelector(".flower5").style.opacity = "1";
+    document.querySelector(".flower5").style.transform = "scale(1) rotate(0deg)";
+}, 3100);
+
+setTimeout(() => {
+    document.querySelector(".flower6").style.opacity = "1";
+    document.querySelector(".flower6").style.transform = "scale(1) rotate(0deg)";
+}, 3500);
+
+setTimeout(() => {
+    document.querySelector(".flower7").style.opacity = "1";
+    document.querySelector(".flower7").style.transform = "scale(1) rotate(0deg)";
+}, 3900);
 },2300);
 });
