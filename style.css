@@ -63,7 +63,7 @@ body{
 /* Bouquet */
 /* ========================= */
 
-#bouquet{
+#bouquet{display:none;
     position:absolute;
     bottom:80px;
     left:50%;
