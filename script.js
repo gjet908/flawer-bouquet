@@ -25,58 +25,18 @@ gift.addEventListener("click", () => {
     // Show bouquet
     bouquet.style.display = "block";
 
-    // Grow stems + leaves
-    setTimeout(() => {
+  // Show lily bouquet
+setTimeout(() => {
 
-        document.querySelector(".stem1").style.height = "180px";
-        document.querySelector(".stem2").style.height = "220px";
-        document.querySelector(".stem3").style.height = "180px";
+    bouquet.style.display = "block";
 
-        document.querySelector(".leaf1").style.opacity = "1";
-        document.querySelector(".leaf2").style.opacity = "1";
-        document.querySelector(".leaf3").style.opacity = "1";
-
-        document.querySelector(".leaf1").style.transform = "rotate(-35deg) scale(1)";
-        document.querySelector(".leaf2").style.transform = "rotate(30deg) scale(1)";
-        document.querySelector(".leaf3").style.transform = "rotate(35deg) scale(1)";
-
+    setTimeout(()=>{
+        bouquet.style.opacity = "1";
+        bouquet.style.transform = "translateX(-50%) scale(1)";
     },100);
 
-    // Flower 1
-    setTimeout(() => {
-        showFlower(".flower1");
-    },1500);
-
-    // Flower 2
-    setTimeout(() => {
-        showFlower(".flower2");
-    },1900);
-
-    // Flower 3
-    setTimeout(() => {
-        showFlower(".flower3");
-    },2300);
-
-    // Flower 4
-    setTimeout(() => {
-        showFlower(".flower4");
-    },2700);
-
-    // Flower 5
-    setTimeout(() => {
-        showFlower(".flower5");
-    },3100);
-
-    // Flower 6
-    setTimeout(() => {
-        showFlower(".flower6");
-    },3500);
-
-    // Flower 7
-    setTimeout(() => {
-        showFlower(".flower7");
-    },3900);
-
+},1000);
+    
     // Start Flower Rain
     setTimeout(() => {
         startFlowerRain();
