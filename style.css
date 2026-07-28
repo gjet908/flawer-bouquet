@@ -42,6 +42,7 @@ body{
     font-size:90px;
     cursor:pointer;
     z-index:10;
+    position:relative;
     animation:float 2s ease-in-out infinite;
 }
 
@@ -59,19 +60,17 @@ body{
     font-size:28px;
     letter-spacing:2px;
 }
-/* ========================= */
-/* Bouquet */
-/* ========================= */
 
 #bouquet{
     display:none;
-    position:absolute;
-    width:220px;          /* 300px ki jagah 220px */
-    bottom:-250px;        /* Screen ke neeche se start hoga */
+    position:fixed;
     left:50%;
+    bottom:-250px;
+    width:180px;     
     transform:translateX(-50%);
     opacity:0;
-    transition:all 2s ease;
+    transition:bottom 2s ease, opacity 1.5s ease;
+    z-index:20;
 }
 
 .sparkle{
