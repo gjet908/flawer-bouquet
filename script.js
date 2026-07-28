@@ -1,4 +1,4 @@
-alert("Script Loaded");
+
 // ===============================
 // Flowers For You
 // Part 1
