@@ -16,7 +16,7 @@ const bouquet = document.getElementById("bouquet");
 
 let targetFlower = "🌷";
 let score = 0;
-let maxScore = 5;
+let maxScore = 3;
 
 gift.addEventListener("click", () => {
 console.log("Script loaded!");
