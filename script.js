@@ -113,7 +113,13 @@ function showLyrics() {
 
         div.style.left = Math.random() * 80 + "vw";
         div.style.top = Math.random() * 80 + "vh";
+        
+const moveX = (Math.random() * 300 - 150) + "px";
+const moveY = (Math.random() * 300 - 150) + "px";
 
+div.style.setProperty("--moveX", moveX);
+div.style.setProperty("--moveY", moveY);
+        
         document.body.appendChild(div);
 
         setTimeout(() => {
