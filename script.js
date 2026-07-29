@@ -102,35 +102,48 @@ const lyrics = [
     "'Til eternity"
 ];
 
+function createLyric(text){
+
+    const div = document.createElement("div");
+
+    div.className = "floating-lyric";
+    div.innerText = text;
+
+    // Random position
+    div.style.left = Math.random() * 90 + "vw";
+    div.style.top = Math.random() * 90 + "vh";
+
+    // Random size
+    div.style.fontSize = (24 + Math.random() * 18) + "px";
+
+    // Random direction
+    const x = (Math.random() * 300 - 150) + "px";
+    const y = (Math.random() * 250 - 125) + "px";
+
+    div.style.setProperty("--moveX", x);
+    div.style.setProperty("--moveY", y);
+
+    document.body.appendChild(div);
+
+    setTimeout(() => {
+        div.remove();
+    }, 12000);
+}
+
 function showLyrics(){
-    
-    console.log("Lyrics Started");
-    
-    lyrics.forEach((line,index)=>{
-    
-        setTimeout(()=>{
 
-            const div = document.createElement("div");
+    let i = 0;
 
-            div.className = "floating-lyric";
-            div.innerText = line;
+    setInterval(() => {
 
-            div.style.left = Math.random()*95 + "vw";
-            div.style.top = Math.random()*95 + "vh";
+        createLyric(lyrics[i]);
 
-            div.style.fontSize = (28 + Math.random()*18) + "px";
+        i++;
 
-            document.body.appendChild(div);
-            
-            console.log(div);
-            
-            setTimeout(()=>{
-                
-                div.remove();
-            },12000);
+        if(i >= lyrics.length){
+            i = 0;
+        }
 
-        },index*1500);
-
-    });
+    },1500);
 
 }
