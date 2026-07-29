@@ -22,6 +22,12 @@ console.log("Script loaded!");
 
     message.innerHTML = "Opening... ❤️";
 
+setTimeout(() => {
+
+    message.innerHTML = "Some things are better felt than explained.";
+    message.classList.add("quote-show");
+
+}, 2200);
 
 // Show lily bouquet
 setTimeout(() => {
