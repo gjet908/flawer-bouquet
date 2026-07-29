@@ -14,6 +14,10 @@ const gift = document.getElementById("gift");
 const message = document.getElementById("message");
 const bouquet = document.getElementById("bouquet");
 
+let targetFlower = "🌷";
+let score = 0;
+let maxScore = 5;
+
 gift.addEventListener("click", () => {
 console.log("Script loaded!");
     // Hide gift
@@ -101,11 +105,13 @@ const lyrics = [
     "'Til eternity"
 ];
 
-setTimeout(()=>{
+setTimeout(() => {
 
-    document.getElementById("game-ui").style.display="block";
+    document.getElementById("game-ui").style.display = "block";
 
-},18000);
+    updateGameUI();
+
+}, 18000);
 
 function showLyrics() {
 
@@ -147,5 +153,14 @@ div.style.setProperty("--moveY", moveY);
 }
 
     }, 2500);
+
+}
+function updateGameUI(){
+
+    document.getElementById("target-flower").innerHTML =
+    "Target: " + targetFlower;
+
+    document.getElementById("score").innerHTML =
+    "Score: " + score + " / " + maxScore;
 
 }
