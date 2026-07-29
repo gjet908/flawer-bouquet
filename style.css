@@ -159,18 +159,16 @@ body{
 
 .floating-lyric{
     position:fixed;
-    color: white;
-   opacity: 1;
-    z-index: 9999;
+    color:rgba(255,255,255,.45);   
     font-style:italic;
     white-space:nowrap;
     pointer-events:none;
     user-select:none;
     z-index:3;
 
-    animation:cinematicLyrics 12s linear forwards;
+    text-shadow:0 0 8px rgba(255,255,255,.4);
 
-    text-shadow:0 0 12px rgba(255,255,255,.2);
+    animation:cinematicLyrics 12s linear forwards;
 }
 
 @keyframes cinematicLyrics{
