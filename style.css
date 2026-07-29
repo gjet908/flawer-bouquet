@@ -194,3 +194,39 @@ body{
         transform:translate(-50%,-50%) translateY(-50px);
     }
 }
+
+.floating-lyric{
+    position:fixed;
+    color:rgba(255,255,255,.12);
+    font-size:38px;
+    font-style:italic;
+    pointer-events:none;
+    user-select:none;
+    white-space:nowrap;
+    animation:floatLyrics 18s linear forwards;
+    z-index:5;
+}
+
+@keyframes floatLyrics{
+
+    0%{
+        opacity:0;
+        transform:translateY(40px) scale(.9);
+        filter:blur(6px);
+    }
+
+    20%{
+        opacity:.18;
+    }
+
+    80%{
+        opacity:.18;
+    }
+
+    100%{
+        opacity:0;
+        transform:translateY(-120px) scale(1.1);
+        filter:blur(2px);
+    }
+
+}
