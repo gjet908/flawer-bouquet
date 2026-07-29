@@ -113,6 +113,7 @@ function showLyrics() {
 
         div.style.left = Math.random() * 80 + "vw";
         div.style.top = Math.random() * 80 + "vh";
+        
         // Premium random size
 div.style.fontSize = (55 + Math.random() * 55) + "px";
 
@@ -121,7 +122,7 @@ div.style.opacity = (0.20 + Math.random() * 0.20);
 
 // Random rotation
 div.style.transform = `rotate(${Math.random() * 10 - 5}deg)`;
-const moveX = (Math.random() * 300 - 150) + "px";
+const moveX = (Math.random() * 500 - 250) + "px";
 const moveY = (Math.random() * 300 - 150) + "px";
 
 div.style.setProperty("--moveX", moveX);
@@ -131,7 +132,7 @@ div.style.setProperty("--moveY", moveY);
 
         setTimeout(() => {
             div.remove();
-        }, 8000);
+        }, 12000);
 
         index++;
 
