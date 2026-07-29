@@ -140,6 +140,6 @@ div.style.setProperty("--moveY", moveY);
     index = 0;
 }
 
-    }, 1500);
+    }, 2000);
 
 }
