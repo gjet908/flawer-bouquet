@@ -56,9 +56,15 @@ body{
 }
 
 #message{
-    margin-top:20px;
+    position:absolute;
+    top:80px;
+    left:50%;
+    transform:translateX(-50%);
     font-size:28px;
     letter-spacing:2px;
+    text-align:center;
+    transition:all 1s ease;
+    z-index:30;
 }
 
 #bouquet{
