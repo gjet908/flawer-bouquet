@@ -73,31 +73,53 @@ function startFlowerRain(){
 
     const container = document.getElementById("flower-rain");
 
-    if(!container) return;
+    const flowers = [
+        "🌷",
+        "🌹",
+        "🌸",
+        "🌺",
+        "🌻",
+        "🌼",
+        "💮"
+    ];
 
-    const flowers = ["🌸","🌹","🌺","🌷","🌼","💮","🌻"];
-
-    setInterval(()=>{
+    setInterval(() => {
 
         const f = document.createElement("div");
 
         f.className = "rain-flower";
 
-        f.innerHTML = flowers[Math.floor(Math.random()*flowers.length)];
+        const flower = flowers[Math.floor(Math.random() * flowers.length)];
 
-        f.style.left = Math.random()*100 + "vw";
-        f.style.fontSize = (20 + Math.random()*25) + "px";
+        f.innerHTML = flower;
+        f.dataset.flower = flower;
+
+        f.style.left = Math.random() * 100 + "vw";
+        f.style.fontSize = (20 + Math.random() * 25) + "px";
+
+        f.addEventListener("click", () => {
+
+            if (f.dataset.flower === targetFlower) {
+                score++;
+            } else {
+                score = Math.max(0, score - 1);
+            }
+
+            updateGameUI();
+
+            f.remove();
+
+        });
 
         container.appendChild(f);
 
-        setTimeout(()=>{
+        setTimeout(() => {
             f.remove();
-        },6000);
+        }, 6000);
 
-    },250);
+    }, 250);
 
 }
-
 const lyrics = [
     "Oh, my angel",
     "Come back to me",
