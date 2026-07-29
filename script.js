@@ -101,6 +101,12 @@ const lyrics = [
     "'Til eternity"
 ];
 
+setTimeout(()=>{
+
+    document.getElementById("game-ui").style.display="block";
+
+},18000);
+
 function showLyrics() {
 
     let index = 0;
