@@ -45,6 +45,14 @@ setTimeout(() => {
     setTimeout(() => {
         startFlowerRain();
     },4200);
+    
+ setTimeout(() => {
+
+    showLyrics();
+
+    setInterval(showLyrics,7000);
+
+},10000);   
 
 });
 
@@ -88,19 +96,37 @@ function startFlowerRain(){
 
 }
 
-setTimeout(() => {
+const lyrics = [
+    "Oh, my angel",
+    "Come back to me",
+    "And I will love you",
+    "'Til eternity"
+];
 
-    const lyrics = document.createElement("div");
+function showLyrics(){
 
-    lyrics.id = "floating-lyrics";
+    lyrics.forEach((line,index)=>{
 
-    lyrics.innerHTML = `
-        Oh, my angel<br>
-        Come back to me<br>
-        And I will love you<br>
-        'Til eternity
-    `;
+        setTimeout(()=>{
 
-    document.body.appendChild(lyrics);
+            const div = document.createElement("div");
 
-}, 10000);
+            div.className = "floating-lyric";
+            div.innerText = line;
+
+            div.style.left = Math.random()*95 + "vw";
+            div.style.top = Math.random()*95 + "vh";
+
+            div.style.fontSize = (28 + Math.random()*18) + "px";
+
+            document.body.appendChild(div);
+
+            setTimeout(()=>{
+                div.remove();
+            },12000);
+
+        },index*1500);
+
+    });
+
+}
