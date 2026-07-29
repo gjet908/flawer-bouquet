@@ -105,7 +105,7 @@ const lyrics = [
 
 function showLyrics(){
     
-    console.log("Lyrics Started")
+    console.log("Lyrics Started");
     
     lyrics.forEach((line,index)=>{
     
@@ -122,6 +122,9 @@ function showLyrics(){
             div.style.fontSize = (28 + Math.random()*18) + "px";
 
             document.body.appendChild(div);
+            
+            console.log(div);
+            
       div.style.background = "red";
       div.style.padding = "10px"
             
