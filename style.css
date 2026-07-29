@@ -157,17 +157,15 @@ body{
     }
 }
 
-
 .floating-lyric{
-    position:fixed;
-    color:rgba(255,255,255,.12);
-    font-size:38px;
-    font-style:italic;
-    pointer-events:none;
-    user-select:none;
-    white-space:nowrap;
-    animation:floatLyrics 18s linear forwards;
-    z-index:5;
+    position: fixed;
+    top: 100px !important;
+    left: 100px !important;
+    color: white !important;
+    background: red !important;
+    font-size: 50px !important;
+    z-index: 999999 !important;
+    opacity: 1 !important;
 }
 
 @keyframes floatLyrics{
