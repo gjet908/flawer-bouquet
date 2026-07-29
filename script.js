@@ -125,9 +125,6 @@ function showLyrics(){
             
             console.log(div);
             
-      div.style.background = "red";
-      div.style.padding = "10px"
-            
             setTimeout(()=>{
                 
                 div.remove();
