@@ -87,3 +87,20 @@ function startFlowerRain(){
     },250);
 
 }
+
+setTimeout(() => {
+
+    const lyrics = document.createElement("div");
+
+    lyrics.id = "floating-lyrics";
+
+    lyrics.innerHTML = `
+        Oh, my angel<br>
+        Come back to me<br>
+        And I will love you<br>
+        'Til eternity
+    `;
+
+    document.body.appendChild(lyrics);
+
+}, 10000);
