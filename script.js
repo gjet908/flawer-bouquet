@@ -113,7 +113,14 @@ function showLyrics() {
 
         div.style.left = Math.random() * 80 + "vw";
         div.style.top = Math.random() * 80 + "vh";
-        
+        // Premium random size
+div.style.fontSize = (55 + Math.random() * 55) + "px";
+
+// Premium opacity
+div.style.opacity = (0.20 + Math.random() * 0.20);
+
+// Random rotation
+div.style.transform = `rotate(${Math.random() * 10 - 5}deg)`;
 const moveX = (Math.random() * 300 - 150) + "px";
 const moveY = (Math.random() * 300 - 150) + "px";
 
@@ -128,9 +135,9 @@ div.style.setProperty("--moveY", moveY);
 
         index++;
 
-        if (index >= lyrics.length) {
-            clearInterval(interval);
-        }
+       if (index >= lyrics.length) {
+    index = 0;
+}
 
     }, 1500);
 
