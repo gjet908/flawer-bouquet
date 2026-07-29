@@ -157,16 +157,6 @@ body{
     }
 }
 
-.floating-lyric{
-    position: fixed;
-    top: 100px !important;
-    left: 100px !important;
-    color: white !important;
-    background: red !important;
-    font-size: 50px !important;
-    z-index: 999999 !important;
-    opacity: 1 !important;
-}
 
 @keyframes floatLyrics{
 
