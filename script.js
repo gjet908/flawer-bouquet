@@ -104,9 +104,11 @@ const lyrics = [
 ];
 
 function showLyrics(){
-
+    
+    console.log("Lyrics Started")
+    
     lyrics.forEach((line,index)=>{
-
+    
         setTimeout(()=>{
 
             const div = document.createElement("div");
@@ -120,8 +122,11 @@ function showLyrics(){
             div.style.fontSize = (28 + Math.random()*18) + "px";
 
             document.body.appendChild(div);
-
+      div.style.background = "red";
+      div.style.padding = "10px"
+            
             setTimeout(()=>{
+                
                 div.remove();
             },12000);
 
