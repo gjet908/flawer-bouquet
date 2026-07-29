@@ -50,8 +50,7 @@ setTimeout(() => {
 
     showLyrics();
 
-    setInterval(showLyrics,7000);
-
+   
 },10000);   
 
 });
