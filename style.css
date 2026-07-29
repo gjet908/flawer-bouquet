@@ -159,7 +159,9 @@ body{
 
 .floating-lyric{
     position:fixed;
-    color:rgba(255,255,255,.10);
+    color: white;
+   opacity: 1;
+    z-index: 9999;
     font-style:italic;
     white-space:nowrap;
     pointer-events:none;
