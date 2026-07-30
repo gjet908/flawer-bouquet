@@ -174,7 +174,7 @@ div.style.setProperty("--moveY", moveY);
     index = 0;
 }
 
-    }, 2500);
+    }, 3000);
 
 }
 function updateGameUI(){
